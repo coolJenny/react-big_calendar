@@ -1,8 +1,13 @@
 <div class="container">
-	<h1>Scedule</h1>
+	<div class="header-logo">
+		<a href="<%= root_path %>" class="">
+			<img src="/assets/images/logo.png" class="logo-img">
+			<h1 class="logo-title">Scedule</h1>
+		</a>	
+	</div>	
 	<div id="events"
-	    data-events="<%= render(template: 'events/index.json.jbuilder') %>">
-	</div>
+	data-events="<%= render(template: 'events/index.json.jbuilder') %>">
+</div>
 </div>
 
 <%= javascript_pack_tag 'big_calendar' %>
