@@ -1,4 +1,6 @@
-
+button {
+  outline: none;
+}
 .rbc-btn {
   color: inherit;
   font: inherit;
@@ -541,6 +543,7 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-time-header.rbc-overflowing {
   border-right: 1px solid #DDD;
+  margin-right: 0 !important;
 }
 .rbc-rtl .rbc-time-header.rbc-overflowing {
   border-right-width: 0;
@@ -628,7 +631,7 @@ button.rbc-input::-moz-focus-inner {
 }
 
 .rbc-calendar{
-  height: 600px;
+  /*height: 600px;*/
 }
 .rbc-now{
   top: 20px;

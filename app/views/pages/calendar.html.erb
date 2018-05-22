@@ -1,6 +1,8 @@
-<h1>Scedule</h1>
-
-<div id="events"
-    data-events="<%= render(template: 'events/index.json.jbuilder') %>">
+<div class="container">
+	<h1>Scedule</h1>
+	<div id="events"
+	    data-events="<%= render(template: 'events/index.json.jbuilder') %>">
+	</div>
 </div>
+
 <%= javascript_pack_tag 'big_calendar' %>
