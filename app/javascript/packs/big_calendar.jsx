@@ -10,13 +10,13 @@ BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
 
 const dateFormat = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/;
 
-  function reviver(key, value) {
-      if (typeof value === "string" && dateFormat.test(value)) {
-          return new Date(value);
-      }
+function reviver(key, value) {
+    if (typeof value === "string" && dateFormat.test(value)) {
+        return new Date(value);
+    }
 
-      return value;
-  }
+    return value;
+}
 
 export default class MyCalendar extends Component {
 
