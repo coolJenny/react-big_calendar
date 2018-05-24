@@ -41,8 +41,8 @@ export default class MyCalendar extends Component {
           step={60}
           timeevents={1}
           onSelectEvent={event => this.openModal(event)}
-          onSelectSlot={(slotInfo) => this.openModal(slotInfo)}
-            />
+          onSelectSlot={(slotInfo) => this.openModal(slotInfo)} />
+          
           <div className="modal fade" id="event-form">
             <div className="modal-dialog" role="document">
               <div className="modal-content">
